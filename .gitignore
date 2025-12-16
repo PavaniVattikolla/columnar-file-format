@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing
+.pytest_cache/
+
+# Packaging
+*.egg-info/
+dist/
+build/
+
+# Custom columnar files
+*.ccf
+
+# Generated outputs
+output*.csv
+
+# OS files
+.DS_Store
