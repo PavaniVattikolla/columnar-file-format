@@ -30,13 +30,13 @@ def main():
     subparsers = parser.add_subparsers()
 
     # CSV → CCF
-    parser_csv_to_ccf = subparsers.add_parser('csv-to-ccf')
+    parser_csv_to_ccf = subparsers.add_parser('csv_to_custom')
     parser_csv_to_ccf.add_argument('input', help='Input CSV file')
     parser_csv_to_ccf.add_argument('output', help='Output CCF file')
     parser_csv_to_ccf.set_defaults(func=csv_to_ccf)
 
     # CCF → CSV
-    parser_ccf_to_csv = subparsers.add_parser('ccf-to-csv')
+    parser_ccf_to_csv = subparsers.add_parser('custom_to_csv')
     parser_ccf_to_csv.add_argument('input', help='Input CCF file')
     parser_ccf_to_csv.add_argument('output', help='Output CSV file')
     parser_ccf_to_csv.set_defaults(func=ccf_to_csv)
